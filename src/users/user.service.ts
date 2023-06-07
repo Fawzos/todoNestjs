@@ -18,8 +18,8 @@ export class UserService {
     return this.UserModel.find().exec();
   }
 
-  findOne(id: string): Promise<User> {
-    const User = this.UserModel.findById(id);
+  async findOne(username: string): Promise<User> {
+    const User = this.UserModel.findOne({ username });
     return User;
   }
 

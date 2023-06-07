@@ -6,7 +6,7 @@ import { UserModule } from './users/user.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { TodoSchema } from './todos/shcemas/todo.schema';
 import { AuthModule } from './auth/auth.module';
-import { UserSchema } from './users/shcema/user.shcema';
+
 @Module({
   imports: [
     MongooseModule.forRoot(
